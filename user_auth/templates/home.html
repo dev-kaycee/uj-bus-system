@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}home{% endblock %}
+
+
+{%block home%}
+{% for bus in buses %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="user">
+        <div class="nearby-user">
+          <div class="row">
+            <div class="col-md-2 col-sm-2">
+              <img src="{% static 'img/black-bus.png' %}" alt="user" class="profile-photo-lg">
+            </div>
+            <div class="col-md-7 col-sm-7">
+              <h5><a href="#" class="profile-link p-color">{{bus}}</a></h5>
+              
+              <p class="text-muted">Arrives At {{bus.distinaton}} In 23 Minutes </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  {% empty %}
+<p>There are no registered users yet.</p>
+  {% endfor %}
+  {% endblock %}

@@ -1,0 +1,43 @@
+body {
+    margin-top: 20px;
+    background: #FAFAFA;
+}
+
+.user .layout {
+    background: #f8f8f8;
+    border-radius: 4px;
+    border: 1px solid #f1f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.user .layout .map {
+    height: 300px;
+    width: 100%;
+    border: none;
+}
+
+.user .nearby-user {
+    padding: 20px 0;
+    border-top: 3px solid #ec5915;
+    border-bottom: 1px solid #ff8e6200;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -6px #222;
+    /* box-shadow:  0px 2px 3px 1px #555350; */
+}
+
+img.profile-photo-lg {
+    height: 80px;
+    width: 80px;
+    border-radius: 15%;
+}
+
+.p-color {
+    color: #ec5915;
+}
+
+.list-shadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #ece9e7;
+}
